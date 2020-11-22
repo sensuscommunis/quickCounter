@@ -7,8 +7,8 @@ export default function Counter({seconds}) {
 
   countdown = () => {
     setTimeout(() => {
-      setRest(rest - 1);
       if (rest > 1) {
+        setRest(rest - 1);
         countdown();
       } else {
         Alert.alert('Times up!');
