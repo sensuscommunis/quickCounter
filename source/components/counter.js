@@ -8,17 +8,22 @@ export default function Counter({seconds}) {
   countdown = () => {
     setTimeout(() => {
       if (rest > 1) {
+        setCounting(true);
         setRest(rest - 1);
         countdown();
       } else {
         Alert.alert('Times up!');
         setRest(seconds);
+        setCounting(false);
       }
     }, 1000);
   };
 
   return (
-    <TouchableOpacity onPress={countdown} style={styles.container}>
+    <TouchableOpacity
+      disabled={isCounting}
+      onPress={countdown}
+      style={styles.container}>
       <Text style={styles.text}>{`${rest} s`}</Text>
     </TouchableOpacity>
   );

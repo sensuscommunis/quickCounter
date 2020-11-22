@@ -1,3 +1,3 @@
 # Count seconds with QuickCounter!
 
-Have fun
+Have fun!
