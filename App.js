@@ -3,6 +3,7 @@ import {StyleSheet, View} from 'react-native';
 
 import AppHeader from './source/components/appHeader';
 import Counter from './source/components/counter';
+import AddCounter from './source/components/addCounter';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Counter seconds={5}></Counter>
         <Counter seconds={8}></Counter>
         <Counter seconds={12}></Counter>
+        <AddCounter></AddCounter>
       </View>
     </View>
   );

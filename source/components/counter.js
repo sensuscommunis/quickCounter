@@ -24,15 +24,15 @@ export default function Counter({seconds}) {
       disabled={isCounting}
       onPress={countdown}
       style={styles.container}>
-      <Text style={styles.text}>{`${rest} s`}</Text>
+      <Text style={styles.text}>{rest}</Text>
     </TouchableOpacity>
   );
 }
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   container: {
-    height: 200,
-    width: 200,
+    height: 100,
+    width: 100,
     borderWidth: 1,
     borderRadius: 100,
     alignItems: 'center',
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'darkcyan',
   },
   text: {
-    fontSize: 60,
+    fontSize: 40,
     color: 'white',
   },
 });
