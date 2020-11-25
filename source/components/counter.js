@@ -6,9 +6,9 @@ export default function Counter({seconds}) {
   const [isCounting, setCounting] = useState(false);
 
   countdown = () => {
+    setCounting(true);
     setTimeout(() => {
       if (rest > 1) {
-        setCounting(true);
         setRest(rest - 1);
         countdown();
       } else {

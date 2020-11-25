@@ -10,9 +10,9 @@ export default function App() {
     <View style={styles.appContainer}>
       <AppHeader title="Few Seconds" />
       <View style={styles.container}>
+        <Counter seconds={3}></Counter>
         <Counter seconds={5}></Counter>
         <Counter seconds={8}></Counter>
-        <Counter seconds={12}></Counter>
         <AddCounter></AddCounter>
       </View>
     </View>

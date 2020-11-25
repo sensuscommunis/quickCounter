@@ -1,8 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 
-import {styles} from './counter';
-
 export default function AddCounter() {
   return (
     <TouchableOpacity style={styles.container}>
@@ -10,3 +8,10 @@ export default function AddCounter() {
     </TouchableOpacity>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {},
+  text: {
+    fontSize: 30,
+  },
+});
